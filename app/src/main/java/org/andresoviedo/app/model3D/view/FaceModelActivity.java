@@ -102,8 +102,7 @@ public class FaceModelActivity extends Activity {
             bind = DataBindingUtil.setContentView(this,R.layout.activity_face);
             gLView = new FaceModelSurfaceView(this);
 //            gLView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
-            gLView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
-            gLView.setZOrderOnTop(true);
+
             bind.frameLayout.addView(gLView);
 //            gLView.setEGLConfigChooser(8, 8, 8, 8, 16, 0); //使用8888 (RGBA) 格式，Alpha通道是显示透明图形必需的。
 //
